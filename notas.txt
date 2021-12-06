@@ -1,1 +1,0 @@
-Em um projeto só pode ter uma func "main", caso contrario tera um erro pois o compilador não entenderá o que tem q executar
