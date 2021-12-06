@@ -1,21 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(void) {
-  float nota1;
-  float nota2;
-  float soma;
+/*Criação função*/
+float funcIMC(float a, float p);
 
-  printf("Este programa faz a soma de suas notas!\n");
+int main() {
+  float peso, altura;
 
-  printf("Insira aqui sua primeira nota: \n");
-  scanf("%f", &nota1);
+  printf("Digite o peso: ");
+  scanf("%f", &peso);
+  printf("Digite a altura: ");
+  scanf("%f", &altura);
 
-  printf("Insira aqui a segunda nota: \n");
-  scanf("%f", &nota2);
+  /*Chamando a função*/
+  float imc = funcIMC(altura, peso); 
 
-  soma = nota1 + nota2;
+  printf("Valor do imc %0.2f \n", imc);
+}
 
-  printf("A soma das suas notas é = %f", soma);
-
-  return 0;
+/*Definição da função*/
+float funcIMC(float a, float p){
+  float calculo = p/(a*a);
+  return calculo;
 }
