@@ -4,8 +4,9 @@ int main(void) {
   float nota1;
   float nota2;
   float soma;
+  float div;
 
-  printf("Este programa faz a soma de suas notas!\n");
+  printf("Vamos fazer a media de suas notas!\n");
 
   printf("Insira aqui sua primeira nota: \n");
   scanf("%f", &nota1);
@@ -14,8 +15,9 @@ int main(void) {
   scanf("%f", &nota2);
 
   soma = nota1 + nota2;
+  div = soma / 2;
 
-  printf("A soma das suas notas é = %f", soma);
+  printf("A media entre suas notas é = %f", div);
 
   return 0;
 }
