@@ -8,3 +8,10 @@ printf
 )
 ;
 Cada uma das linhas representa um Token
+
+O Token ; determina o fim de uma instrução
+
+Para fazer um comentario em C precisa deixar o q quer comentar entre /* */
+
+Em C temos algumas palavras reservadas q n podem ser add em nenhuma variavel
+
