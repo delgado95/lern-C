@@ -1,18 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
-#include <float.h>
 
-int main(int argc, char** argv) {
-  printf("Storage size for float : %d \n", sizeof(float));
-  printf("FLT_MAX                :   %g\n", (float) FLT_MAX);
-  printf("FLT_MIN                :   %g\n", (float) FLT_MIN);
-  printf("-FLT_MAX               :   %g\n", (float) -FLT_MAX);
-  printf("-FLT_MIN               :   %g\n", (float) -FLT_MIN);
-  printf("DBL_MAX                :   %g\n", (double) DBL_MAX);
-  printf("DBL_MIN                :   %g\n", (double) DBL_MIN);
-  printf("-DBL_MAX               :  %g\n", (double) -DBL_MAX);
-  printf("Precision value        : %d\n", FLT_DIG );
+// Declarando variaveis fora da função
+extern int a, b;
+extern int c;
+extern float f;
+
+int main() {
+
+  /*Definição da variavel*/
+  int a, b;
+  int c;
+  float f;
+
+  /*Atribuição*/
+  a = 10;
+  b = 20;
+
+  c = a + b;
+  printf("O valor de c: %d \n", c);
+
+  f = 70.0/3.0;
+  printf("O valor de f: %f \n", f);
 
   return 0;
 }
