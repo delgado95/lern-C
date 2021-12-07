@@ -2,9 +2,7 @@
 
 int main () {
 
-   int  *ptr = NULL;
-
-   printf("The value of ptr is : %x\n", ptr  );
- 
+   char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+   printf("Greeting message: %s\n", greeting );
    return 0;
 }
