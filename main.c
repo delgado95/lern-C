@@ -1,19 +1,14 @@
 #include <stdio.h>
  
 /* global variable declaration */
-int g;
+int g = 20;
  
 int main () {
 
   /* local variable declaration */
-  int a, b;
+  int g = 10;
  
-  /* actual initialization */
-  a = 10;
-  b = 20;
-  g = a + b;
- 
-  printf ("value of a = %d, b = %d and g = %d\n", a, b, g);
+  printf ("value of g = %d\n",  g);
  
   return 0;
 }
