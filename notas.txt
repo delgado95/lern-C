@@ -15,3 +15,4 @@ Para fazer um comentario em C precisa deixar o q quer comentar entre /* */
 
 Em C temos algumas palavras reservadas q n podem ser add em nenhuma variavel
 
+O operador E comercial (&), que denota um endereço na memória
