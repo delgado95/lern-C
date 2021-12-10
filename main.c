@@ -8,6 +8,9 @@ struct Books {
   int book_id;
 };
 
+/*Declarando a função de mostra em tela*/
+void printbook( struct Books book);
+
 int main () {
 
   struct Books Book1; /*Declaração dos tipos de book*/
@@ -26,16 +29,19 @@ int main () {
   Book2.book_id = 2;
   
   /*Mostrando as informações do livro 1*/
-  printf("Book 1 title    : %s\n", Book1.title);
-  printf("Book 1 author   : %s\n", Book1.author);
-  printf("Book 1 subject  : %s\n", Book1.subject);
-  printf("Book 1 id       : %d\n", Book1.book_id);
 
-  /*Mostrando as informações do livro 1*/
-  printf("Book 2 title    : %s\n", Book2.title);
-  printf("Book 2 author   : %s\n", Book2.author);
-  printf("Book 2 subject  : %s\n", Book2.subject);
-  printf("Book 2 id       : %d\n", Book2.book_id);
+  printbook(Book1);
+
+  /*Mostrando as informações do livro 2*/
+  printbook(Book2);
 
   return 0;
+}
+
+void printbook( struct Books book){
+ /*Mostrando as informações do livro 1*/
+  printf("Book title    : %s\n", book.title);
+  printf("Book author   : %s\n", book.author);
+  printf("Book subject  : %s\n", book.subject);
+  printf("Book id       : %d\n", book.book_id);
 }
