@@ -14,7 +14,7 @@ int main () {
 
    /* concatenates str1 and str2 */
    strcat( str1, str2);
-   printf("strcat( str1, str2):   %s\n", str1 );
+   printf("strcat( str1, str2) :  %s\n", str1 );
 
    /* total lenghth of str1 after concatenation */
    len = strlen(str1);
