@@ -31,7 +31,7 @@ int main () {
   printf("Book 1 subject  : %s\n", Book1.subject);
   printf("Book 1 id       : %d\n", Book1.book_id);
 
-  /*Mostrando as informações do livro 1*/
+  /*Mostrando as informações do livro 2*/
   printf("Book 2 title    : %s\n", Book2.title);
   printf("Book 2 author   : %s\n", Book2.author);
   printf("Book 2 subject  : %s\n", Book2.subject);
