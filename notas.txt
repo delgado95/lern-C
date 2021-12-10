@@ -1,3 +1,5 @@
+A linguagem C é a limguagem mais utilizada por ser uma lingugem super consitente e ter uma velocidade de execução invejavel
+
 Em um projeto só pode ter uma func "main", caso contrario tera um erro pois o compilador não entenderá o que tem q executar
 
 Tokens -> em c Tokens são tudo aquilo q usamos como codigos, pode ser palavras já determinadas como "main"...
