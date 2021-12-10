@@ -22,7 +22,6 @@ O operador E comercial (&), que denota um endereço na memória
 Para definir uma estrutura, você deve usar a instrução "struct". A instrução "struct" define um novo tipo de dados, com mais de um membro.
 Ex:
 struct [structure tag] {
-
    member definition;
    member definition;
    ...
