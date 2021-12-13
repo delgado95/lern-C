@@ -2,9 +2,10 @@
 
 main() {
 
-   int sum = 17, count = 5;
-   double mean;
+   int  i = 17;
+   char c = 'c'; /* ascii value is 99 */
+   int sum;
 
-   mean = (double) sum / count;
-   printf("Value of mean : %f\n", mean );
+   sum = i + c;
+   printf("Value of sum : %d\n", sum );
 }
