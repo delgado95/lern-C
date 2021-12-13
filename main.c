@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main( ) {
 
-   int c;
+   char str[100];
 
    printf( "Enter a value :");
-   c = getchar( );
+   gets( str );
 
    printf( "\nYou entered: ");
-   putchar( c );
+   puts( str );
 
    return 0;
 }
