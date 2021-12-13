@@ -2,12 +2,12 @@
 int main( ) {
 
    char str[100];
+   int i;
 
    printf( "Enter a value :");
-   gets( str );
+   scanf("%s %d", str, &i);
 
-   printf( "\nYou entered: ");
-   puts( str );
+   printf( "\nYou entered: %s %d ", str, i);
 
    return 0;
 }
