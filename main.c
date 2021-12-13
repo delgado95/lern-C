@@ -1,21 +1,26 @@
 #include <stdio.h>
 #include <string.h>
-
-struct {
-   unsigned int age : 3;
-} Age;
-
+ 
+typedef struct Books {
+   char title[50];
+   char author[50];
+   char subject[100];
+   int book_id;
+} Book;
+ 
 int main( ) {
 
-   Age.age = 4;
-   printf( "Sizeof( Age ) : %d\n", sizeof(Age) );
-   printf( "Age.age : %d\n", Age.age );
-
-   Age.age = 7;
-   printf( "Age.age : %d\n", Age.age );
-
-   Age.age = 8;
-   printf( "Age.age : %d\n", Age.age );
+   Book book;
+ 
+   strcpy( book.title, "C Programming");
+   strcpy( book.author, "Nuha Ali"); 
+   strcpy( book.subject, "C Programming Tutorial");
+   book.book_id = 6495407;
+ 
+   printf( "Book title : %s\n", book.title);
+   printf( "Book author : %s\n", book.author);
+   printf( "Book subject : %s\n", book.subject);
+   printf( "Book book_id : %d\n", book.book_id);
 
    return 0;
 }
