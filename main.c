@@ -1,13 +1,10 @@
 #include <stdio.h>
-int main( ) {
 
-   char str[100];
-   int i;
+main() {
+   FILE *fp;
 
-   printf( "Enter a value :");
-   scanf("%s %d", str, &i);
-
-   printf( "\nYou entered: %s %d ", str, i);
-
-   return 0;
+   fp = fopen("/tmp/test.txt", "w+");
+   fprintf(fp, "This is testing for fprintf...\n");
+   fputs("This is testing for fputs...\n", fp);
+   fclose(fp);
 }

@@ -1,0 +1,7 @@
+Existem duas funções, que podem ser usadas para entrada e saída binárias -
+
+size_t fread(void *ptr, size_t size_of_elements, size_t number_of_elements, FILE *a_file);
+              
+size_t fwrite(const void *ptr, size_t size_of_elements, size_t number_of_elements, FILE *a_file);
+
+Ambas as funções devem ser usadas para ler ou escrever blocos de memórias - geralmente arrays ou estruturas.
