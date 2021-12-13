@@ -4,8 +4,8 @@ main() {
 
    int  i = 17;
    char c = 'c'; /* ascii value is 99 */
-   float sum;
+   int sum;
 
    sum = i + c;
-   printf("Value of sum : %f\n", sum );
+   printf("Value of sum : %d\n", sum );
 }
