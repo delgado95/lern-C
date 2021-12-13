@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-#define MAX(x,y) ((x) > (y) ? (x) : (y))
+main() {
 
-int main(void) {
-   printf("Max between 20 and 10 is %d\n", MAX(10, 20));  
-   return 0;
+   int sum = 17, count = 5;
+   double mean;
+
+   mean = (double) sum / count;
+   printf("Value of mean : %f\n", mean );
 }
