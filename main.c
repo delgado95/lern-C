@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-#define  message_for(a, b)  \
-   printf(#a " and " #b ": We love you!\n")
+#define tokenpaster(n) printf ("token" #n " = %d", token##n)
 
 int main(void) {
-   message_for(Carole, Debra);
+   int token34 = 40;
+   tokenpaster(34);
    return 0;
 }
