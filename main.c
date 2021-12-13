@@ -11,7 +11,13 @@ int main( ) {
 
    union Data data;        
 
-   printf( "Memory size occupied by data : %d\n", sizeof(data));
+   data.i = 10;
+   data.f = 220.5;
+   strcpy( data.str, "C Programming");
+
+   printf( "data.i : %d\n", data.i);
+   printf( "data.f : %f\n", data.f);
+   printf( "data.str : %s\n", data.str);
 
    return 0;
 }
