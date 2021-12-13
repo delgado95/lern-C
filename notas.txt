@@ -29,3 +29,5 @@ struct [structure tag] {
 } [one or more structure variables];  
 
 Para definir uma união, você deve usar a instrução união da mesma maneira que fez ao definir uma estrutura. A declaração de união define um novo tipo de dados com mais de um membro para seu programa.
+
+A linguagem de programação C fornece uma palavra-chave chamada typedef , que você pode usar para dar um novo nome a um tipo.
