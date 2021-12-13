@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-#define tokenpaster(n) printf ("token" #n " = %d", token##n)
+#if !defined (MESSAGE)
+   #define MESSAGE "You wish!"
+#endif
 
 int main(void) {
-   int token34 = 40;
-   tokenpaster(34);
+   printf("Here is the message: %s\n", MESSAGE);  
    return 0;
 }
