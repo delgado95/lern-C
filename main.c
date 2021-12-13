@@ -1,19 +1,11 @@
 #include <stdio.h>
 
-main() {
+int main() {
 
-   FILE *fp;
-   char buff[255];
-
-   fp = fopen("/tmp/test.txt", "r");
-   fscanf(fp, "%s", buff);
-   printf("1 : %s\n", buff );
-
-   fgets(buff, 255, (FILE*)fp);
-   printf("2: %s\n", buff );
-   
-   fgets(buff, 255, (FILE*)fp);
-   printf("3: %s\n", buff );
-   fclose(fp);
+   printf("File :%s\n", __FILE__ );
+   printf("Date :%s\n", __DATE__ );
+   printf("Time :%s\n", __TIME__ );
+   printf("Line :%d\n", __LINE__ );
+   printf("ANSI :%d\n", __STDC__ );
 
 }
