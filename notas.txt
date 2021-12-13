@@ -1,6 +1,6 @@
-A linguagem C é a limguagem mais utilizada por ser uma lingugem super consitente e ter uma velocidade de execução invejavel
+A linguagem C é a limguagem mais utilizada por ser uma lingugem super consitente e ter uma velocidade de execução invejavel.
 
-Em um projeto só pode ter uma func "main", caso contrario tera um erro pois o compilador não entenderá o que tem q executar
+Em um projeto só pode ter uma func "main", caso contrario tera um erro pois o compilador não entenderá o que tem q executar.
 
 Tokens -> em c Tokens são tudo aquilo q usamos como codigos, pode ser palavras já determinadas como "main"...
 Ex:
@@ -9,15 +9,15 @@ printf
   "hello world ! \n"
 )
 ;
-Cada uma das linhas representa um Token
+Cada uma das linhas representa um Token.
 
-O Token ; determina o fim de uma instrução
+O Token ; determina o fim de uma instrução.
 
 Para fazer um comentario em C precisa deixar o q quer comentar entre /* */
 
-Em C temos algumas palavras reservadas q n podem ser add em nenhuma variavel
+Em C temos algumas palavras reservadas q n podem ser add em nenhuma variavel.
 
-O operador E comercial (&), que denota um endereço na memória
+O operador E comercial (&), que denota um endereço na memória.
 
 Para definir uma estrutura, você deve usar a instrução "struct". A instrução "struct" define um novo tipo de dados, com mais de um membro.
 Ex:
@@ -27,3 +27,5 @@ struct [structure tag] {
    ...
    member definition;
 } [one or more structure variables];  
+
+Para definir uma união, você deve usar a instrução união da mesma maneira que fez ao definir uma estrutura. A declaração de união define um novo tipo de dados com mais de um membro para seu programa.
