@@ -1,11 +1,25 @@
 #include <stdio.h>
+#include <errno.h>
+#include <string.h>
 
-main() {
+extern int errno ;
 
-   int  i = 17;
-   char c = 'c'; /* ascii value is 99 */
-   float sum;
+int main () {
 
-   sum = i + c;
-   printf("Value of sum : %f\n", sum );
+   FILE * pf;
+   int errnum;
+   pf = fopen ("unexist.txt", "rb");
+	
+   if (pf == NULL) {
+   
+      errnum = errno;
+      fprintf(stderr, "Value of errno: %d\n", errno);
+      perror("Error printed by perror");
+      fprintf(stderr, "Error opening file: %s\n", strerror( errnum ));
+   } else {
+   
+      fclose (pf);
+   }
+   
+   return 0;
 }
