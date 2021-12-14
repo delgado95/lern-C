@@ -1,19 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-main() {
+unsigned long long int factorial(unsigned int i) {
 
-   int dividend = 20;
-   int divisor = 5;
-   int quotient;
- 
-   if( divisor == 0) {
-      fprintf(stderr, "Division by zero! Exiting...\n");
-      exit(EXIT_FAILURE);
+   if(i <= 1) {
+      return 1;
    }
-	
-   quotient = dividend / divisor;
-   fprintf(stderr, "Value of quotient : %d\n", quotient );
+   return i * factorial(i - 1);
+}
 
-   exit(EXIT_SUCCESS);
+int  main() {
+   int i = 12;
+   printf("Factorial of %d is %d\n", i, factorial(i));
+   return 0;
 }
