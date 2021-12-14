@@ -1,23 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-int main() {
+int main( int argc, char *argv[] )  {
 
-   char name[100];
-   char *description;
-
-   strcpy(name, "Zara Ali");
-
-   /* allocate memory dynamically */
-   description = malloc( 200 * sizeof(char) );
-	
-   if( description == NULL ) {
-      fprintf(stderr, "Error - unable to allocate required memory\n");
-   } else {
-      strcpy( description, "Zara ali a DPS student in class 10th");
+   if( argc == 2 ) {
+      printf("The argument supplied is %s\n", argv[1]);
    }
-   
-   printf("Name = %s\n", name );
-   printf("Description: %s\n", description );
+   else if( argc > 2 ) {
+      printf("Too many arguments supplied.\n");
+   }
+   else {
+      printf("One argument expected.\n");
+   }
 }
