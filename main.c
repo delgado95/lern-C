@@ -1,24 +1,27 @@
 #include <stdio.h>
+#include <stdarg.h>
 
-int fibonacci(int i) {
+double average(int num,...) {
 
-   if(i == 0) {
-      return 0;
+   va_list valist;
+   double sum = 0.0;
+   int i;
+
+   /* initialize valist for num number of arguments */
+   va_start(valist, num);
+
+   /* access all the arguments assigned to valist */
+   for (i = 0; i < num; i++) {
+      sum += va_arg(valist, int);
    }
 	
-   if(i == 1) {
-      return 1;
-   }
-   return fibonacci(i-1) + fibonacci(i-2);
+   /* clean memory reserved for valist */
+   va_end(valist);
+
+   return sum/num;
 }
 
-int  main() {
-
-   int i;
-	
-   for (i = 0; i < 10; i++) {
-      printf("%d\t\n", fibonacci(i));
-   }
-	
-   return 0;
+int main() {
+   printf("Average of 2, 3, 4, 5 = %f\n", average(4, 2,3,4,5));
+   printf("Average of 5, 10, 15 = %f\n", average(3, 5,10,15));
 }
