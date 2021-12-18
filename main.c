@@ -1,22 +1,23 @@
-#include<stdio.h>
-int main() {
-  double first, second, temp;
-  printf("Enter first number: ");
-  scanf("%lf", &first);
-  printf("Enter second number: ");
-  scanf("%lf", &second);
+#include <stdio.h>
 
-  // value of first is assigned to temp
-  temp = first;
+int main(){
 
-  // value of second is assigned to first
-  first = second;
+  float r ;
+  float d ;
 
-  // value of temp (initial value of first) is assigned to second
-  second = temp;
+  printf("Neste vamos ver como esta sua seu saldo bancario \n");
 
-  // %.2lf displays number up to 2 decimal points
-  printf("\nAfter swapping, first number = %.2lf\n", first);
-  printf("After swapping, second number = %.2lf", second);
+  printf("Insira um sua renda: ");
+  scanf("%f", &r);
+
+  printf("Insira um sua despesa: ");
+  scanf("%f", &d);
+
+  if (r-d >= 0)
+  printf("Voce esta com saldo positivo \n");
+  else 
+  printf("Voce precisa de ajuda para administrar sua renda");
+
   return 0;
+
 }
