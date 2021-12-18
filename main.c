@@ -1,23 +1,24 @@
 #include <stdio.h>
 
-int main(){
+const int CITY = 2;
+const int WEEk = 7;
 
-  float r ;
-  float d ;
+int main (){
 
-  printf("Neste vamos ver como esta sua seu saldo bancario \n");
+  int temperature[CITY][WEEk];
 
-  printf("Insira um sua renda: ");
-  scanf("%f", &r);
+  for (int i = 0; i < CITY; ++i){
+    for (int j = 0; j < WEEk; ++j){
+      printf("City %d, Day %d: ", i + 1, j + 1);
+      scanf("%d", &temperature[i][j]);
+    }
+  }
+  printf("\n Displaying values: \n\n");
 
-  printf("Insira um sua despesa: ");
-  scanf("%f", &d);
-
-  if (r-d >= 0)
-  printf("Voce esta com saldo positivo \n");
-  else 
-  printf("Voce precisa de ajuda para administrar sua renda");
-
+  for (int i = 0; i < CITY; ++i){
+    for (int j = 0; j < WEEk; ++j){
+      printf("City %d, Day %d = %d\n", i + 1, j + 1, temperature[i][j]);
+    }
+  }
   return 0;
-
 }
