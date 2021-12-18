@@ -1,16 +1,19 @@
 #include <stdio.h>
 
-int main( int argc, char *argv[] )  {
+int main (){
 
-   printf("Program name %s\n", argv[0]);
- 
-   if( argc == 2 ) {
-      printf("The argument supplied is %s\n", argv[1]);
-   }
-   else if( argc > 2 ) {
-      printf("Too many arguments supplied.\n");
-   }
-   else {
-      printf("One argument expected.\n");
-   }
+  int num1;
+
+  printf("Vamos ver se o numero é par ou impar !\n");
+
+  printf("Insira qualquer nuemro inteiro: \n");
+  scanf("%d", &num1);
+
+  if (num1%2 == 0)
+    printf("é par \n");
+  else 
+    printf("é impar \n");
+
+  return 0;
+  
 }
